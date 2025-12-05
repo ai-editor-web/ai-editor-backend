@@ -36,8 +36,8 @@ linguagem natural.
 
 ### Backend
 
--   NestJS\
--   TypeScript\
+-   NestJS
+-   TypeScript
 -   MongoDB / Mongoose
 
 
