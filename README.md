@@ -47,19 +47,20 @@ linguagem natural.
 
 ``` mermaid
 classDiagram
-    class Usuario {
+    class Users {
         -id : String
-        -nome : String
+        -name : String
         -email : String
-        -senha : String
+        -password : String
     }
 
-    class Arquivo {
+    class Files {
         -id : String
-        -nome : String
-        -conteudo : String
+        -name : String
+        -content : String
         -ownerId : String
         -collaborators : String[]
+        -deletedAt
         -dataCriacao : Date
         -dataModificacao : Date
     }
@@ -86,8 +87,8 @@ classDiagram
     }
 
     %% Relacionamentos
-    Usuario "1" --> "0..*" Arquivo : cria
-    Arquivo "1" --> "0..*" Sugestao : recebe
+    Users "1" --> "0..*" Files : cria
+    Files "1" --> "0..*" Sugestao : recebe
 ```
 
 
