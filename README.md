@@ -58,7 +58,8 @@ classDiagram
         -id : String
         -nome : String
         -conteudo : String
-        -usuarioId : String
+        -ownerId : String
+        -collaborators : String[]
         -dataCriacao : Date
         -dataModificacao : Date
     }
